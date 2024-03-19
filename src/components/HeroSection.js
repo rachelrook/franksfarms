@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import './HeroSection.css';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function HeroSection() {
@@ -11,9 +10,9 @@ function HeroSection() {
       {/* <h1>AYAM CEMANI CHICKENS</h1> */}
       
       <div className='center'>
-      <Link to="https://franksfarms.com/aboutme">
+      {/* <Link to="https://franksfarms.com/aboutme">
         <img className='circle-me' src='/images/me-pink-brick.jpg' alt="Rachel Headshot"/>
-        </Link>
+        </Link> */}
       </div>
       {/* <Button 
           buttonStyle='btn--outline'
