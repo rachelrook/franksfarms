@@ -68,3 +68,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Tips
+
+type rfce enter in a component to set up function
+
+### Casing Error when changing file name
+Make sure that you have a TypeScript file open, press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette and type restart, then select the command "TypeScript: Restart TS server".
+
+
+### Most Used Shortcuts
+alt + Z - brings all characters within view
+Shift+alt+down arrow - drops highlighted text down
+ctrl+shift=e - show explorer / side bar of directory
+
+### Replace Routes with outdated 'Switch'
+
+You need to use Routes rather than Switch for react-router-dom@6. Something like this:
+
+<!-- <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+      </Route>
+    </Routes>
+  </BrowserRouter> -->
+
+
+  ### Package JSON
+  <!-- "scripts": 
+    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
+    "start": "react-scripts start",
+    "build": "react-scripts build webpack --config=Scripts/config/webpack.prod.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject" -->
+    
+    
+### Routing issues after changing file name casing
+
+delete 'default-development' file in node_modules>.cache
+ 
+ ### Netlify Deploy Routing 404 Error Issue
+ Add _redirects file in your public folder Write down inside file: /* /index.html 200 in my case I have no issues with my builder adding .txt extension, i'm using CRA (create react app)
+ 
+ /* /index.html 200 
