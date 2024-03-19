@@ -54,6 +54,11 @@ function Navbar() {
               <Link to='/blogs' className='nav-links' onClick={closeMobileMenu}>
                   News
                 </Link>
+                <li className='nav-item'>
+              <a href="mailto:rrukavina913@gmail.com" className='nav-links-mobile' >
+                  Contact
+              </a>
+              </li>
               {/* <li className='nav-item'>
                 <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                   
@@ -72,11 +77,7 @@ function Navbar() {
                 </a>
               </li> */}
 
-              <li className='nav-item'>
-              <a href="mailto:rrukavina913@gmail.com" className='nav-links-mobile' >
-                  Contact
-              </a>
-              </li>
+             
             </ul>
             { button  &&
             <Button buttonStyle='btn--outline'>Contact Me</Button>
